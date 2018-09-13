@@ -1,0 +1,45 @@
+.icon-circle {
+ 	width: 150px;
+ 	height: 150px;
+ 	background-color: color($colors, sec-back);
+ 	border-radius: 100px;
+ 	position: relative;
+ 	margin: 0 auto;
+ 	top: 25%;
+ 	opacity: 0.6;
+ 	transition: 0.4s;
+
+ 	&:hover {
+ 		opacity: 1;
+ 	}
+ }
+
+ .content-ios {
+ 	background-color: color($colors, back);
+ }
+
+
+/* --- SVG --- */
+.logo-container {
+
+	position: relative;
+	top: 22px;
+	right: 7px;
+	transition: 0.4s;
+	cursor: pointer;
+
+	&:hover {
+		transform: scale(1.1, 1.1);
+	}
+
+
+	.cls-1{fill:#222831;}
+	.cls-2,.cls-3,.cls-4 {
+		font-size:260px;
+	 	font-family:SignPainter-HouseScript, SignPainter;
+	}
+	.cls-2{fill:#00807c;}
+	.cls-3{fill:#00bfba;}
+	.cls-4{fill:#00fff5;}
+}
+

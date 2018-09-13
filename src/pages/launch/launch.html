@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-navbar hideBackButton="true" class="extendable">
+
+    <ion-title> <div class="header-text">home</div> </ion-title>
+
+
+  	<ion-buttons start>
+      <button ion-button icon-only (click)="navPrev()">
+      	<div class="small-circle left" >
+      		<ion-icon class="back-arrow-header" color="main" name="arrow-back"></ion-icon>
+      	</div>
+      </button>
+    </ion-buttons>
+    
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+      	<div class="small-circle right">
+      		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+    				<g id="logo">
+    					<text class="cls-2" transform="translate(119.93 197.92) rotate(-8.44)">Z</text>
+    					<text class="cls-3" transform="translate(106.93 196.92) rotate(-8.44)">Z</text>
+    					<text class="cls-4" transform="translate(95.2 196.18) rotate(-8.94)">Z</text>
+    				</g>
+  			 </svg>
+      	</div>
+      </button>
+    </ion-buttons>
+
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+<div class="content-divisor"></div>
+
+<div class="bubble bubble-per" (click)="navPer()">
+  <ion-icon id="icon" class="beer" name="beer"></ion-icon>  
+</div>
+
+<div class="content-divisor median" (click)="navProf()"></div>
+
+<div class="bubble bubble-prof">
+    <ion-icon id="icon" class="flask" name="flask"></ion-icon>  
+</div>
+
+</ion-content>

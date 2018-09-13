@@ -1,0 +1,129 @@
+
+.small-circle {
+	position: relative;
+	height: 40px;
+	width: 40px;
+	background-color: color($colors, back);
+	border-radius: 100px;
+	opacity: 0.6;
+	font-size: 20px;
+	transition: 0.4;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	.back-arrow-header {
+		position: absolute;
+		top: 8px;
+		right: 10px;
+	}
+
+}
+.left { left: 20px; }
+.right { right: 20px; }
+
+/* --- Bubbles --- */
+.bubble {
+	height: 170px;
+	width: 170px;
+	border-radius: 100px;
+	background-color: color($colors, sec-back);
+	opacity: 0;
+	top: 37%;
+	left: 28%;
+	position: absolute;
+}
+
+.bubble-prof {
+	animation: temp-fade-in 0.4s linear 0.7s 1, push-down 0.2s linear 0.7s 1;
+	animation-fill-mode: forwards;
+}
+
+.bubble-per {
+	animation: temp-fade-in 0.4s linear 0.7s 1, push-up 0.2s linear 0.7s 1;
+	animation-fill-mode: forwards;
+}
+
+#icon {
+
+	position: relative;
+	color: color($colors, main);
+	opacity: 0.8;
+	font : {
+		size: 100px;
+	}
+}
+
+.beer {
+	top: 19%;
+	left: 32%;
+}
+
+.flask {
+	top: 21%;
+	left: 28%;
+}
+
+
+/* --- Lines --- */
+.content-divisor {
+	height: 1px;
+	width: 100%;
+	background-color: color($colors, main);
+}
+.median {
+	position: relative;
+	top: 50%;
+	left: -30px;
+	height: 0.3px;
+	transform: none;
+	animation: extend 0.5s ease-in 0s 1, rotateLine 0.4s ease-out 0.5s 1;
+	animation-fill-mode: forwards;
+}
+
+/* --- SVG --- */
+.logo {
+	width: 100px;
+	height: 100px;
+}
+
+/* --- Header Changes --- */
+.toolbar-background {
+	background-color: color($colors, sec-back);
+}
+
+.extendable {
+	height: 60px;
+}
+
+.content-ios {
+	background-color: color($colors, back);
+}
+
+
+/* --- Key Frames -- */
+@keyframes extend {
+	0% {width: 0%;}
+	100% {
+		width: 120%;
+		height: 3px;
+		}
+}
+
+@keyframes rotateLine {
+	100% {transform: rotate(-30deg);}
+}
+
+@keyframes temp-fade-in {
+	100% {opacity: 1;}
+}
+
+@keyframes push-up {
+	100% {top: 15%;}
+}
+
+@keyframes push-down {
+	100% {top: 60%;}
+}
